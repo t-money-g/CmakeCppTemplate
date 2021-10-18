@@ -8,6 +8,7 @@ project( ${PROJECT_NAME} )
 set( CMAKE_BUILD_TYPE Debug )
 #set( CMAKE_BUILD_TYPE Release )
 
+#TODO Add Catch2 testing library for optional tests.
 
 #[[ADD_DEFINITIONS(-g++ -O2 -fsigned-char -freg-struct-return -Wall -W -Wshadow -Wstrict-prototypes -Wpointer-arith -Wcast-qual -Winline -Werror)]]
 
