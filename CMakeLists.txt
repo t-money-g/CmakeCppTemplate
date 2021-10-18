@@ -8,8 +8,6 @@ project( ${PROJECT_NAME} )
 set( CMAKE_BUILD_TYPE Debug )
 #set( CMAKE_BUILD_TYPE Release )
 
-#TODO Add Catch2 testing library for optional tests.
-
 #[[ADD_DEFINITIONS(-g++ -O2 -fsigned-char -freg-struct-return -Wall -W -Wshadow -Wstrict-prototypes -Wpointer-arith -Wcast-qual -Winline -Werror)]]
 
 if( WIN32 )
@@ -30,11 +28,20 @@ endif()
 # Inform CMake where the header files are
 include_directories( include )
 
+INCLUDE(FetchContent)
+
+FetchContent_Declare(
+		Catch2
+		GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+		GIT_TAG			v2.13.1)
+FetchContent_MakeAvailable(Catch2)
+
 
 # Automatically add all *.cpp and *.h files to the project
 file ( GLOB SOURCES "./src/*.cpp" "./include/*.h" )
-add_executable( ${PROJECT_NAME} ${SOURCES} )
+add_executable( ${PROJECT_NAME} ${SOURCES})
 
+target_link_libraries( ${PROJECT_NAME} Catch2::Catch2)
 
 # Set the default project 
 set_property( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME} )
