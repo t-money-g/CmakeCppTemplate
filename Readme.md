@@ -1,10 +1,16 @@
 
-The purpose of this project is to provide a template project
-for user's own projects. 
+Templatized version of  [BogCyg's](https://github.com/BogCyg/BookCpp) EmptyPro sample. 
+This is a GitHub template for starting a Cmake/C++ template for Mac, Linux or Windows.
+
+Works great with Clion but can be used with any IDE that supports Cmake.
+
+No need to fork or clone this repo directly, just click "Use this template" and clone locally. 
+
+Instructions:
+ 
 Assuming your project is named "MyPro", proceed as follows:
 
-1. Make a directory named "MyPro" and copy to it all files 
-and folders from the "EmptyPro".
+1. After clicking use this template clone your repo and name it into "MyPro".
 
 2. In the ./MyPro/CMakeLists.txt find the line
 set( PROJECT_NAME EmptyPro )
