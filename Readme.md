@@ -10,7 +10,7 @@ Instructions:
  
 Assuming your project is named "MyPro", proceed as follows:
 
-1. After clicking use this template clone your repo and name it into "MyPro".
+1. After clicking use this template clone your repo and name it "MyPro".
 
 2. In the ./MyPro/CMakeLists.txt find the line
 set( PROJECT_NAME EmptyPro )
