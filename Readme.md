@@ -6,7 +6,7 @@ Works great with Clion but can be used with any IDE that supports Cmake.
 
 No need to fork or clone this repo directly, just click "Use this template" and clone locally. 
 
-Instructions:
+#Instructions:
  
 Assuming your project is named "MyPro", proceed as follows:
 
