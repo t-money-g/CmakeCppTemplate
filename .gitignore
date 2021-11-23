@@ -1,4 +1,7 @@
 /cmake-build-debug/
+/build_linux/
+/build_mac/
+/build_win/
 .idea
 CMakeLists.txt.user
 CMakeCache.txt
