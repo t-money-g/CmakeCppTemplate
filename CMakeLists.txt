@@ -1,9 +1,17 @@
-cmake_minimum_required( VERSION 3.14 )
+cmake_minimum_required( VERSION 3.1...3.22)
+
+
+#cmake basics recommendations 
+if(${CMAKE_VERSION} VERSION_LESS 3.14)
+	 cmake_policy(VERSION ${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION})
+endif()
 
 # For a new project it is sufficient to change only its name in the following line
 set( PROJECT_NAME EmptyPro )
 
-project( ${PROJECT_NAME} )
+project( ${PROJECT_NAME}
+		 VERSION 1.0 
+		 LANGUAGES CXX)
 
 set( CMAKE_BUILD_TYPE Debug )
 #set( CMAKE_BUILD_TYPE Release )
